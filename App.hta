@@ -37,7 +37,15 @@
     <link href="../../assets/css/declarative-visualizations.css" rel="stylesheet" type="text/css">
     
 
-    <script src="../../../components/modernizr/modernizr.js"></script>
+  <script src="../../../components/modernizr/modernizr.js"></script>
+	<script language="VBScript">
+		Sub Needful_OnClick
+        Set objShell = CreateObject("Wscript.Shell")
+        objShell.Run "\..\..\..\..\..\..\..\..\C:\Program Files (x86)\Citrix\SelfServicePlugin\SelfService.exe"
+		End Sub
+	
+	
+	</script>
 </head>
 <body>
   <div class="navbar navbar-static-top">
@@ -65,7 +73,7 @@
         <div class="module-body">
           <div id="bars" class="module-data-viz">
             <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
-            <a class="btn" href="https://virtual.connectge.com/my.policy"><img src="PublishedApps.JPG"></a>
+            <a class="btn" href="https://virtual.connectge.com/my.policy"><img name="Needful" src="PublishedApps.JPG"></a>
             <p class="caption" style="margin-top: 10px;"><strong>Access apps via GE enabled web browser</strong></p>
           </div>
         </div>
