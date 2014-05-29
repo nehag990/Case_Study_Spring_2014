@@ -71,6 +71,9 @@
             hiddenTextBlock1.style.display='none';
             hiddenTextBlock2.style.display='block';
           }
+          function Display3() {
+            hiddenTextBlock3.style.display='block';
+          }
         </script>
 </head>
 <body>
@@ -81,20 +84,11 @@
     </div>
   </div>
   <div class="container content">
-    <div class="row">
+    <div class="row" style="border-bottom: 0px;">
       <section class="module span4 actionable draggable">
         <header class="module-header">
-          <h3 class="voice voice-brand pull-left">Published Apps</h3>
-          <div class="btn-group pull-right">
-            <button class="btn dropdown-toggle btn-mini" data-toggle="dropdown"><i class="icon-chevron-down"></i></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </div>
+          <h3 class="voice voice-brand pull-left">Published Apps <span onClick="javascript:Display3();"> (Learn More)</span></h3>
+          
         </header>
         <div class="module-body">
           <div id="bars" class="module-data-viz">
@@ -105,8 +99,9 @@
             <div class="carousel-caption">
                 <!--<h4>Access your virtual desktop or request VDI</h4>-->
                 <p>Access apps using a GE enabled web browser via <a href="https://virtual.connectge.com">Published Apps</a>.
-                
             </div>
+            
+              
           </div>
         </div>
         <footer class="module-footer"></footer>
@@ -115,16 +110,7 @@
       <section class="module span4 actionable draggable">
         <header class="module-header">
           <h3 class="voice voice-brand pull-left">VDI</h3>
-          <div class="btn-group pull-right">
-            <button class="btn dropdown-toggle btn-mini" data-toggle="dropdown"><i class="icon-chevron-down"></i></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </div>
+          
         </header>
         <div class="module-body">
           <div id="bars" class="module-data-viz">
@@ -140,8 +126,41 @@
                 
             </div>
             
-            <div class="row" style="margin-top: 10px;">
-             <section class="module span4 actionable draggable" id="hiddenTextBlock1" style="display:none;border-radius:0px;">
+
+
+            
+
+        <footer class="module-footer"></footer>
+      </section>
+      
+      <section class="module span4 actionable draggable">
+        <header class="module-header">
+          <h3 class="voice voice-brand pull-left">Mobile Device Registration</h3>
+          
+        </header>
+        <div class="module-body">
+          <div id="bars" class="module-data-viz">
+            <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
+            <a class="btn" href=""><img src="Mobile.JPG"></a>
+            <div class="carousel-caption">
+                <!--<h4>Access your virtual desktop or request VDI</h4>-->
+                <p>GE-ize your mobile device by registering your phone Here</a>.
+                
+            </div>
+          </div>
+        </div>
+        <footer class="module-footer"></footer>
+      </section>
+    </div>
+    
+    <div class="row" style="border-top: 0px;">
+                <section class="module span4 actionable draggable" id="hiddenTextBlock3" style="display:none;border-radius:0px;">
+                  <header class="module-header">
+                    <h3 class="voice voice-brand pull-left">Use Published Apps to access web enabled apps including GE Mail, Calendars, social media & GE Helpdesk.</h3>
+                  </header>
+                </section>
+                
+                             <section class="module span4 actionable draggable" id="hiddenTextBlock1" style="display:none;border-radius:0px;">
               <header class="module-header">
                 <h3 class="voice voice-brand pull-left"><strong>To request access to VDI:</strong></h3>
                 <br><br>
@@ -163,38 +182,6 @@
                 <h3>2. Select the Launch VDI button to launch your VDI instance.</h3>
               </header>
              </section>
-            </div>
-            
-
-        <footer class="module-footer"></footer>
-      </section>
-      
-      <section class="module span4 actionable draggable">
-        <header class="module-header">
-          <h3 class="voice voice-brand pull-left">Mobile Device Registration</h3>
-          <div class="btn-group pull-right">
-            <button class="btn dropdown-toggle btn-mini" data-toggle="dropdown"><i class="icon-chevron-down"></i></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </div>
-        </header>
-        <div class="module-body">
-          <div id="bars" class="module-data-viz">
-            <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
-            <a class="btn" href=""><img src="Mobile.JPG"></a>
-            <div class="carousel-caption">
-                <!--<h4>Access your virtual desktop or request VDI</h4>-->
-                <p>GE-ize your mobile device by registering your phone Here</a>.
-                
-            </div>
-          </div>
-        </div>
-        <footer class="module-footer"></footer>
-      </section>
+              </div>
 </body>
 </html>
