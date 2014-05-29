@@ -8,6 +8,9 @@
 <HTA:APPLICATION
   APPLICATIONNAME="Simple HTA"
   SYSMENU="yes">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Simple HTA</title>
@@ -37,7 +40,38 @@
     <link href="../../assets/css/declarative-visualizations.css" rel="stylesheet" type="text/css">
     
 
-    <script src="../../../components/modernizr/modernizr.js"></script>
+  <script src="../../../components/modernizr/modernizr.js"></script>
+	<script language="VBScript">
+		Sub Needful_OnClick
+        Set objShell = CreateObject("Wscript.Shell")
+        objShell.Run "\..\..\..\..\..\..\..\..\C:\Program Files (x86)\Citrix\SelfServicePlugin\SelfService.exe"
+		End Sub
+
+
+	</script>
+        
+        <script type="text/javascript">
+          function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+              document.getElementById('ifYes').style.display = 'visible';
+              document.getElementById('ifNo').style.display = 'hidden';
+            }
+            else {
+              document.getElementById('ifYes').style.display = 'hidden';
+              document.getElementById('ifNo').style.display = 'visible';
+            }
+          }
+        </script>
+        <script type="text/javascript">
+          function Display1() {
+            hiddenTextBlock1.style.display='block';
+            hiddenTextBlock2.style.display='none';
+          }
+           function Display2() {
+            hiddenTextBlock1.style.display='none';
+            hiddenTextBlock2.style.display='block';
+          }
+        </script>
 </head>
 <body>
   <div class="navbar navbar-static-top">
@@ -65,8 +99,14 @@
         <div class="module-body">
           <div id="bars" class="module-data-viz">
             <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
-            <a class="btn" href="https://virtual.connectge.com/my.policy"><img src="PublishedApps.JPG"></a>
-            <p class="caption" style="margin-top: 10px;"><strong>Access apps via GE enabled web browser</strong></p>
+            <a class="btn" href="https://virtual.connectge.com" target="_blank"><img src="PublishedApps2.JPG"></a>
+            <!--<p class="caption" style="margin-top: 10px;"><strong>Access apps via GE enabled web browser</strong></p>-->
+            
+            <div class="carousel-caption">
+                <!--<h4>Access your virtual desktop or request VDI</h4>-->
+                <p>Access apps using a GE enabled web browser via <a href="https://virtual.connectge.com">Published Apps</a>.
+                
+            </div>
           </div>
         </div>
         <footer class="module-footer"></footer>
@@ -88,11 +128,44 @@
         </header>
         <div class="module-body">
           <div id="bars" class="module-data-viz">
-            <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
-            <a class="btn" href=""><img src="PublishedApps.JPG"></a>
-            <p class="caption" style="margin-top: 10px;"><strong>Request a VDI workflow</strong></p>
+          <img src="VDIlogo.png"  alt="">
           </div>
         </div>
+        
+        
+        
+            <div class="carousel-caption">
+                <!--<h4>Access your virtual desktop or request VDI</h4>-->
+                <p><span onClick="javascript:Display1();">Click Here</span>  if you have already gone through the VDI request process, otherwise <span onClick="javascript:Display2();">Click Here</span> to request VDI.
+                
+            </div>
+            
+            <div class="row" style="margin-top: 10px;">
+             <section class="module span4 actionable draggable" id="hiddenTextBlock1" style="display:none;border-radius:0px;">
+              <header class="module-header">
+                <h3 class="voice voice-brand pull-left"><strong>To request access to VDI:</strong></h3>
+                <br><br>
+                <h3>1. Copy the following link onto you clipboard:</h3>
+<h5>http://supportcentral.ge.com/ProcessMaps/form_new_request.asp?prod_id=121411&form_id=475376&node_id=1399371</h5>
+                <br>
+                <h3>2. Open a <strong>GE browser</strong> found on the <a href="https://virtual.connectge.com">Published Apps</a> screen.</h3>
+                <br>
+                <h3>3. Paste the previously copied link into your GE browser search bar. Press enter to access the VDI workflow.</h3>
+              </header>
+             </section>
+             
+              <section class="module span4 actionable draggable" id="hiddenTextBlock2" style="display:none;border-radius:0px;">
+              <header class="module-header">
+                <h3 class="voice voice-brand pull-left"><strong>To access Virtual Desktop:</strong></h3>
+                <br><br>
+                <h3>1. Open the <a href="https://virtual.connectge.com">Published Apps</a> screen that you have come accustomed to. You will now see a Launch VDI button.</h3>
+                <br>
+                <h3>2. Select the Launch VDI button to launch your VDI instance.</h3>
+              </header>
+             </section>
+            </div>
+            
+
         <footer class="module-footer"></footer>
       </section>
       
@@ -113,8 +186,12 @@
         <div class="module-body">
           <div id="bars" class="module-data-viz">
             <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
-            <a class="btn" href=""><img src="PublishedApps.JPG"></a>
-            <p class="caption" style="margin-top: 10px;"><strong>GE-ize your mobile device by registering your phone here</strong></p>
+            <a class="btn" href=""><img src="Mobile.JPG"></a>
+            <div class="carousel-caption">
+                <!--<h4>Access your virtual desktop or request VDI</h4>-->
+                <p>GE-ize your mobile device by registering your phone Here</a>.
+                
+            </div>
           </div>
         </div>
         <footer class="module-footer"></footer>
