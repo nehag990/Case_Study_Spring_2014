@@ -64,15 +64,121 @@
         </script>
         <script type="text/javascript">
           function Display1() {
-            hiddenTextBlock1.style.display='block';
-            hiddenTextBlock2.style.display='none';
+            if (hiddenTextBlock1.style.display=='none') {
+              hiddenTextBlock1.style.display='block';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock4.style.display='none';
+              hiddenTextBlock5.style.display='none';
+              hiddenTextBlock6.style.display='none';
+            }
+             else{
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock4.style.display='block';
+              hiddenTextBlock5.style.display='block';
+              hiddenTextBlock6.style.display='block';
+            }
           }
            function Display2() {
-            hiddenTextBlock1.style.display='none';
-            hiddenTextBlock2.style.display='block';
+            if (hiddenTextBlock2.style.display=='none') {
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='block';
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock4.style.display='none';
+              hiddenTextBlock5.style.display='none';
+              hiddenTextBlock6.style.display='none';
+            }
+             else{
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock4.style.display='block';
+              hiddenTextBlock5.style.display='block';
+              hiddenTextBlock6.style.display='block';
+            }
           }
           function Display3() {
-            hiddenTextBlock3.style.display='block';
+            if (hiddenTextBlock3.style.display=='none') {
+              hiddenTextBlock3.style.display='block';
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock4.style.display='none';
+              hiddenTextBlock5.style.display='none';
+              hiddenTextBlock6.style.display='none';
+            }
+            else{
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock4.style.display='block';
+              hiddenTextBlock5.style.display='block';
+              hiddenTextBlock6.style.display='block';
+            }
+          }
+          
+          function Display4() {
+            if (hiddenTextBlock8.style.display=='none') {
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock4.style.display='none';
+              hiddenTextBlock5.style.display='none';
+              hiddenTextBlock6.style.display='none';
+              hiddenTextBlock7.style.display='none';
+              hiddenTextBlock8.style.display='block';
+            }
+             else{
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock4.style.display='block';
+              hiddenTextBlock5.style.display='block';
+              hiddenTextBlock6.style.display='block';
+              hiddenTextBlock7.style.display='none';
+              hiddenTextBlock8.style.display='none';
+            }
+          }
+          
+          function Display5() {
+             if (hiddenTextBlock7.style.display=='none') {
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock4.style.display='none';
+              hiddenTextBlock5.style.display='none';
+              hiddenTextBlock6.style.display='none';
+              hiddenTextBlock7.style.display='block';
+            }
+             else{
+              hiddenTextBlock3.style.display='none';
+              hiddenTextBlock1.style.display='none';
+              hiddenTextBlock2.style.display='none';
+              hiddenTextBlock4.style.display='block';
+              hiddenTextBlock5.style.display='block';
+              hiddenTextBlock6.style.display='block';
+              hiddenTextBlock7.style.display='none';
+            }
+          }
+          
+          function Display6(){
+            if (hiddenTextBlock9.style.display=='none'){
+              hiddenTextBlock9.style.display='block';
+            }
+            else hiddenTextBlock9.style.display='none';
+          }
+          function Display7(){
+            if (hiddenTextBlock10.style.display=='none'){
+              hiddenTextBlock10.style.display='block';
+            }
+            else hiddenTextBlock10.style.display='none';
+          }
+          function Display8(){
+            if (hiddenTextBlock11.style.display=='none'){
+              hiddenTextBlock11.style.display='block';
+            }
+            else hiddenTextBlock11.style.display='none';
           }
         </script>
 </head>
@@ -80,12 +186,12 @@
   <div class="navbar navbar-static-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="../../index.html"><span class="ge-logo"></span> <span>App Title <small><i>powered by</i> GE Business</small></span></a>
+      <a class="brand" href="../../index.html"><span class="ge-logo"></span> <span>MyGate <small><i>powered by</i> GE Business</small></span></a>
     </div>
   </div>
   <div class="container content">
-    <div class="row" style="border-bottom: 0px;">
-      <section class="module span4 actionable draggable">
+    <div class="row" style="border-bottom: 0px;margin-bottom: 0px; height: 290px;z-index:0">
+      <section class="module span4 actionable draggable" style="border-bottom: 0px;margin-bottom: 0px; height: 290px;">
         <header class="module-header">
           <h3 class="voice voice-brand pull-left">Published Apps <span onClick="javascript:Display3();"> (Learn More)</span></h3>
           
@@ -100,16 +206,23 @@
                 <!--<h4>Access your virtual desktop or request VDI</h4>-->
                 <p>Access apps using a GE enabled web browser via <a href="https://virtual.connectge.com">Published Apps</a>.
             </div>
-            
               
           </div>
         </div>
         <footer class="module-footer"></footer>
+
+            <section class="module span4 actionable draggable" id="hiddenTextBlock3" style="display:none;border-radius:0px;margin-top: 10px;margin-left: 0px;">
+                  <header class="module-header">
+                    <h3 class="voice voice-brand pull-left">Use Published Apps to access web enabled apps including GE Mail, Calendars, social media & GE Helpdesk.</h3>
+                  </header>
+            </section>
+
       </section>
+      
       
       <section class="module span4 actionable draggable">
         <header class="module-header">
-          <h3 class="voice voice-brand pull-left">VDI</h3>
+          <h3 class="voice voice-brand pull-left">Virtual Desktop Infrastructure <span onClick="javascript:Display4();"> (Learn More)</span></h3>
           
         </header>
         <div class="module-body">
@@ -122,7 +235,7 @@
         
             <div class="carousel-caption">
                 <!--<h4>Access your virtual desktop or request VDI</h4>-->
-                <p><span onClick="javascript:Display1();">Click Here</span>  if you have already gone through the VDI request process, otherwise <span onClick="javascript:Display2();">Click Here</span> to request VDI.
+                <p><span onClick="javascript:Display2();">Click Here</span>  if you have already gone through the VDI request process, otherwise <span onClick="javascript:Display1();">Click Here</span> to request VDI.
                 
             </div>
             
@@ -131,11 +244,38 @@
             
 
         <footer class="module-footer"></footer>
+        <section class="module span4 actionable draggable" id="hiddenTextBlock8" style="display:none;border-radius:0px;margin-top: 10px;margin-left: 0px;">
+                  <header class="module-header">
+                    <h3 class="voice voice-brand pull-left">Use Published Apps to access web enabled apps including GE Mail, Calendars, social media & GE Helpdesk.</h3>
+                  </header>
+            </section>
+        <section class="module span4 actionable draggable" id="hiddenTextBlock1" style="display:none;border-radius:0px;margin-top: 10px;margin-left: 0px;">
+              <header class="module-header">
+                <h3 class="voice voice-brand pull-left"><strong>To request access to VDI:</strong></h3>
+                <br><br>
+                <h3>1. Copy the following link onto you clipboard:</h3>
+<h5>http://supportcentral.ge.com/ProcessMaps/form_new_request.asp?prod_id=121411&form_id=475376&node_id=1399371</h5>
+                <br>
+                <h3>2. Open a <strong>GE browser</strong> found on the <a href="https://virtual.connectge.com">Published Apps</a> screen.</h3>
+                <br>
+                <h3>3. Paste the previously copied link into your GE browser search bar. Press enter to access the VDI workflow.</h3>
+              </header>
+             </section>
+             
+              <section class="module span4 actionable draggable" id="hiddenTextBlock2" style="display:none;border-radius:0px;margin-top: 10px;margin-left: 0px;">
+              <header class="module-header">
+                <h3 class="voice voice-brand pull-left"><strong>To access Virtual Desktop:</strong></h3>
+                <br><br>
+                <h3>1. Open the <a href="https://virtual.connectge.com">Published Apps</a> screen that you have come accustomed to. You will now see a Launch VDI button.</h3>
+                <br>
+                <h3>2. Select the Launch VDI button to launch your VDI instance.</h3>
+              </header>
+             </section>
       </section>
       
       <section class="module span4 actionable draggable">
         <header class="module-header">
-          <h3 class="voice voice-brand pull-left">Mobile Device Registration</h3>
+          <h3 class="voice voice-brand pull-left">Mobile Device Registration<span onClick="javascript:Display5();"> (Learn More)</span></h3>
           
         </header>
         <div class="module-body">
@@ -150,38 +290,88 @@
           </div>
         </div>
         <footer class="module-footer"></footer>
-      </section>
-    </div>
-    
-    <div class="row" style="border-top: 0px;">
-                <section class="module span4 actionable draggable" id="hiddenTextBlock3" style="display:none;border-radius:0px;">
+        
+        <section class="module span4 actionable draggable" id="hiddenTextBlock7" style="display:none;border-radius:0px;margin-top: 10px;margin-left: 0px;">
                   <header class="module-header">
                     <h3 class="voice voice-brand pull-left">Use Published Apps to access web enabled apps including GE Mail, Calendars, social media & GE Helpdesk.</h3>
                   </header>
-                </section>
+            </section>
+      </section>
+    </div>
+    
+    <div class="row" id="row2" style="border-bottom: 0px;margin-bottom: 0px; height: 290px;z-index:-1">
+        <section class="module span4 actionable draggable" id="hiddenTextBlock4">
+        <header class="module-header">
+          <h3 class="voice voice-brand pull-left">MyApps<span onClick="javascript:Display6();"> (Learn More)</span><i> -- Coming Soon</i></h3>
+          
+        </header>
+        <div class="module-body">
+          <div id="bars" class="module-data-viz">
+            <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
+            <a class="btn" href=""><img src="Mobile.JPG"></a>
+            <div class="carousel-caption">
+                <!--<h4>Access your virtual desktop or request VDI</h4>-->
+                <p>Access GE apps in the cloud like GE Mail, Calendars, social media & GE Helpdesk.</h3></a>.
                 
-                             <section class="module span4 actionable draggable" id="hiddenTextBlock1" style="display:none;border-radius:0px;">
-              <header class="module-header">
-                <h3 class="voice voice-brand pull-left"><strong>To request access to VDI:</strong></h3>
-                <br><br>
-                <h3>1. Copy the following link onto you clipboard:</h3>
-<h5>http://supportcentral.ge.com/ProcessMaps/form_new_request.asp?prod_id=121411&form_id=475376&node_id=1399371</h5>
-                <br>
-                <h3>2. Open a <strong>GE browser</strong> found on the <a href="https://virtual.connectge.com">Published Apps</a> screen.</h3>
-                <br>
-                <h3>3. Paste the previously copied link into your GE browser search bar. Press enter to access the VDI workflow.</h3>
-              </header>
-             </section>
-             
-              <section class="module span4 actionable draggable" id="hiddenTextBlock2" style="display:none;border-radius:0px;">
-              <header class="module-header">
-                <h3 class="voice voice-brand pull-left"><strong>To access Virtual Desktop:</strong></h3>
-                <br><br>
-                <h3>1. Open the <a href="https://virtual.connectge.com">Published Apps</a> screen that you have come accustomed to. You will now see a Launch VDI button.</h3>
-                <br>
-                <h3>2. Select the Launch VDI button to launch your VDI instance.</h3>
-              </header>
-             </section>
-              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="module-footer"></footer>
+        <section class="module span4 actionable draggable" id="hiddenTextBlock9" style="display:none;border-radius:0px;margin-top: 10px;margin-left: 0px;">
+                  <header class="module-header">
+                    <h3 class="voice voice-brand pull-left">Use Published Apps to access web enabled apps including GE Mail, Calendars, social media & GE Helpdesk.</h3>
+                  </header>
+            </section>
+      </section>
+      
+      <section class="module span4 actionable draggable" id="hiddenTextBlock5">
+        <header class="module-header">
+          <h3 class="voice voice-brand pull-left">Re-Image Your PC<span onClick="javascript:Display7();"> (Learn More) </span><i>-- Coming Soon</i></h3>
+          
+        </header>
+        <div class="module-body">
+          <div id="bars" class="module-data-viz">
+            <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
+            <a class="btn" href=""><img src="Mobile.JPG"></a>
+            <div class="carousel-caption">
+                <!--<h4>Access your virtual desktop or request VDI</h4>-->
+                <p>Access GE apps in the cloud like GE Mail, Calendars, social media & GE Helpdesk.</h3></a>.
+                
+            </div>
+          </div>
+        </div>
+        <footer class="module-footer"></footer>
+        <section class="module span4 actionable draggable" id="hiddenTextBlock10" style="display:none;border-radius:0px;margin-top: -5px;margin-left: 0px;">
+                  <header class="module-header">
+                    <h3 class="voice voice-brand pull-left">Use Published Apps to access web enabled apps including GE Mail, Calendars, social media & GE Helpdesk.</h3>
+                  </header>
+            </section>
+      </section>
+      
+      <section class="module span4 actionable draggable" id="hiddenTextBlock6">
+        <header class="module-header">
+          <h3 class="voice voice-brand pull-left">Acquire GE Device<span onClick="javascript:Display8();"> (Learn More)</span><i> -- Coming Soon</i></h3>
+          
+        </header>
+        <div class="module-body">
+          <div id="bars" class="module-data-viz">
+            <!-- <p class="subtitle">Access apps via GE enabled browser</p> -->
+            <a class="btn" href=""><img src="Mobile.JPG"></a>
+            <div class="carousel-caption">
+                <!--<h4>Access your virtual desktop or request VDI</h4>-->
+                <p>Access GE apps in the cloud like GE Mail, Calendars, social media & GE Helpdesk.</h3></a>.
+                
+            </div>
+          </div>
+        </div>
+        <footer class="module-footer"></footer>
+        <section class="module span4 actionable draggable" id="hiddenTextBlock11" style="display:none;border-radius:0px;margin-top: -5px;margin-left: 0px;padding:0px;">
+                  <header class="module-header">
+                    <h3 class="voice voice-brand pull-left">Use Published Apps to access web enabled apps including GE Mail, Calendars, social media & GE Helpdesk.</h3>
+                  </header>
+            </section>
+      </section>
+              
+    </div>
 </body>
 </html>
